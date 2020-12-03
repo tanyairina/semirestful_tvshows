@@ -1,0 +1,97 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#wrapper{
+    height: 900px;
+    width: 800px;
+    background-color: #1c6fbd;
+    background-image: linear-gradient(#548ecf, #4884ec,#548ecf);
+    padding: 10px;
+    font-family: sans-serif;
+}
+#wrapper a{
+    color: white;
+}
+#go_back a {
+    margin-left: 650px;
+    color: white;
+}
+#all_data{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    height: 500px;
+    width: 650px;
+    margin: 45px;
+    color: white;
+    padding: 10px 0px 0px 10px;
+    background-color: rgba(41, 115, 175, 0.774);
+    box-shadow: 2px 2px 2px black;
+    border-radius: 10px;
+}
+#all_data2{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    height: 100px;
+    width: 300px;
+    margin: 5px;
+    color: white;
+    padding: 10px 0px 0px 10px;
+    background-color: rgba(41, 115, 175, 0.774);
+    box-shadow: 2px 2px 2px black;
+    border-radius: 10px;
+    display: inline-block;
+}
+#box_size{
+    display: inline-block;
+    height: 105px;
+    width: auto;
+}
+#all_data h1{
+    text-align: center;
+    color: rgb(10, 55, 82);
+}
+#all_data h4{
+    text-align: left;
+    color: rgb(66, 170, 196);
+}
+#all_data p{
+    text-align: left;
+    color: rgb(143, 190, 202);
+}
+#all_data a{
+    font-weight: lighter;
+    color: rgb(123, 167, 194);
+}
+#buttons{
+    vertical-align: top;
+    margin-left: 300px;
+    margin-top: 110px;
+}
+.button {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgba(49, 113, 209, 0.726);
+    border-radius: 10px;
+    font-size: 16px;
+    color: rgb(151, 238, 223);
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 2px;
+}
+table {
+    font-family: sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+th, td {
+    text-align: center;
+    color: darkblue;
+    text-align: left;
+    padding: 8px;
+}
+tr:nth-child(even){background-color: #2b7ec2}
+th {
+    text-align: center;
+    background-color: #1b1d3a;
+    color: rgb(243, 231, 231);
+}

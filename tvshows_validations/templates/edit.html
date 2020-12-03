@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>Edit TV Show</title>
+</head>
+<body>
+    <div id="wrapper">
+        <h1>ADD A NEW SHOW</h1>
+        <div id="go_back">
+        <a href="/shows">Go Back</a>
+        </div>
+        <div id="all_data">
+    <h1>Edit Show</h1>
+    <form action="/shows/{{show.id}}/update" method="POST">
+    {% csrf_token %}
+        {% if messages %}
+        <ul class="alert alert-secondary" role="alert">
+            {% for message in messages %}
+            <li class="text-danger">{{ message }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+        <div class="form-group">
+            <label for="title">Title</label> 
+            <input type="text" name="title" id="title" class="form-control" value="{{show.title}}"></input>
+        </div>
+        <div id="box_size">
+        <div id="all_data2">
+        <div class="form-group">
+            <label for="network">Network</label> 
+            <input type="text" name="network" id="network" class="form-control" value="{{show.network}}"></input>
+        </div>
+        </div>
+        <div id="all_data2">
+        <div class="form-group">
+            <label for="release_date">Release Date</label> 
+            <input type="text" name="release_date" id="release_date" class="form-control" value="{{show.release_date|date:'Y-m-d'}}"></input>
+        </div>
+        </div>
+        </div>
+        <div class="form-group">
+            <label for="description">Description</label> 
+            <textarea name="description" id="description" cols="30" rows="5" class="form-control">{{show.description}}</textarea>
+        </div>
+        <div id="buttons">
+        <button class="button">Submit</button>
+        </div>
+    </form>
+    </div>
+</body>
+</html>
